@@ -258,8 +258,12 @@ const Checkout = () => {
                                         value={form.values.cpf}
                                         onChange={form.handleChange}
                                         onBlur={form.handleBlur}
-                                        className={checkInputHasError('cpf') ? 'error' : ''}
-                                        mask='999.999.999-99'
+                                        className={
+                                            checkInputHasError('cpf')
+                                                ? 'error'
+                                                : ''
+                                        }
+                                        mask="999.999.999-99"
                                     />
                                 </S.InputGroup>
                             </S.Row>
@@ -372,7 +376,7 @@ const Checkout = () => {
                                                             ? 'error'
                                                             : ''
                                                     }
-                                                    mask='999.999.999-99'
+                                                    mask="999.999.999-99"
                                                 />
                                             </S.InputGroup>
                                         </S.Row>
@@ -420,7 +424,7 @@ const Checkout = () => {
                                                             ? 'error'
                                                             : ''
                                                     }
-                                                    mask='9999 9999 9999 9999'
+                                                    mask="9999 9999 9999 9999"
                                                 />
                                             </S.InputGroup>
                                             <S.InputGroup maxWidth="123px">
@@ -443,7 +447,7 @@ const Checkout = () => {
                                                             ? 'error'
                                                             : ''
                                                     }
-                                                    mask='99'
+                                                    mask="99"
                                                 />
                                             </S.InputGroup>
                                             <S.InputGroup maxWidth="123px">
@@ -466,7 +470,7 @@ const Checkout = () => {
                                                             ? 'error'
                                                             : ''
                                                     }
-                                                    mask='99'
+                                                    mask="99"
                                                 />
                                             </S.InputGroup>
                                             <S.InputGroup maxWidth="48px">
@@ -487,7 +491,7 @@ const Checkout = () => {
                                                             ? 'error'
                                                             : ''
                                                     }
-                                                    mask='999'
+                                                    mask="999"
                                                 />
                                             </S.InputGroup>
                                         </S.Row>
@@ -515,7 +519,9 @@ const Checkout = () => {
                                                     {installments.map(
                                                         (installment) => (
                                                             <option
-                                                            value={installment.quantity}
+                                                                value={
+                                                                    installment.quantity
+                                                                }
                                                                 key={
                                                                     installment.quantity
                                                                 }
